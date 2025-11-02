@@ -14,11 +14,8 @@ const HomePage: React.FC = () => {
           <div className="hero__text">
             <span className="hero__eyebrow">Diagnostico mais acessivel</span>
             <h1>
-              LumioHub ilumina jornadas autistas com acolhimento, clareza e parceria desde o primeiro contato.
+              LumioHub ilumina jornadas com acolhimento, clareza e parceria desde o primeiro contato.
             </h1>
-            <p className="hero__lead">
-              Reunimos triagens reconhecidas, conteudos curados e especialistas preparados em um fluxo continuo e humano.
-            </p>
             <div className="hero__actions">
               <Link to="/triagem" className="btn btn-primary">
                 Iniciar triagem
