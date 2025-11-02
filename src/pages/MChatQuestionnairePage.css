@@ -1,0 +1,70 @@
+﻿.mchat {
+  padding: 4rem 0 5rem;
+}
+
+.mchat__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 760px;
+}
+
+.mchat__header p {
+  max-width: 600px;
+}
+
+.mchat__progress {
+  position: relative;
+  height: 12px;
+  background-color: rgba(15, 23, 42, 0.1);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.mchat__progress-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, var(--puzzle-yellow), var(--puzzle-red));
+  border-radius: inherit;
+  transition: width 0.3s ease;
+}
+
+.mchat__progress span {
+  position: absolute;
+  top: -32px;
+  right: 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.mchat__controls {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.mchat__control-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@media (max-width: 640px) {
+  .mchat__progress span {
+    position: static;
+    margin-top: 0.5rem;
+  }
+
+  .mchat__controls {
+    flex-direction: column-reverse;
+  }
+
+  .mchat__control-btn {
+    width: 100%;
+  }
+}
+
+
+

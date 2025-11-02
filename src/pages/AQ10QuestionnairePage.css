@@ -1,0 +1,72 @@
+﻿.aq10 {
+  padding: 4rem 0 5rem;
+}
+
+.aq10__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 760px;
+}
+
+.aq10__header p {
+  max-width: 580px;
+}
+
+.aq10__progress {
+  position: relative;
+  height: 12px;
+  background-color: rgba(15, 23, 42, 0.1);
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.aq10__progress-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, var(--puzzle-blue), var(--puzzle-green));
+  border-radius: inherit;
+  transition: width 0.3s ease;
+}
+
+.aq10__progress span {
+  position: absolute;
+  top: -32px;
+  right: 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.aq10__controls {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.aq10__control-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@media (max-width: 640px) {
+  .aq10__progress span {
+    position: static;
+    margin-top: 0.5rem;
+  }
+
+  .aq10__controls {
+    flex-direction: column-reverse;
+  }
+
+  .aq10__control-btn {
+    width: 100%;
+  }
+}
+
+
+

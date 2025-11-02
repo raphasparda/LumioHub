@@ -1,0 +1,1 @@
+export const DEMO_TRIAGE_CODE = 'LUMIOHUB-TRIAGEM-2025';

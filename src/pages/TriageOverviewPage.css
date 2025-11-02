@@ -1,0 +1,63 @@
+﻿.triage-overview {
+  padding: 4rem 0 5rem;
+}
+
+.triage-overview__container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.triage-overview__header {
+  max-width: 760px;
+}
+
+.triage-overview__header p {
+  margin-top: 1rem;
+  color: var(--text-muted);
+}
+
+.triage-overview__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.triage-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.12), rgba(250, 204, 21, 0.12)), var(--surface-card);
+}
+
+.triage-card__badge {
+  align-self: flex-start;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  background: rgba(37, 99, 235, 0.15);
+  color: var(--puzzle-blue);
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.triage-card__list {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--text-muted);
+  display: grid;
+  gap: 0.5rem;
+}
+
+.triage-card__cta {
+  margin-top: auto;
+  width: fit-content;
+}
+
+@media (max-width: 640px) {
+  .triage-card__cta {
+    width: 100%;
+  }
+}
+
+
+

@@ -1,0 +1,55 @@
+.directory {
+  padding: 4rem 0 5rem;
+}
+
+.directory__container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.directory__header p {
+  max-width: 640px;
+}
+
+.directory__filters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.08), rgba(34, 197, 94, 0.1)), var(--surface-card);
+}
+
+.directory__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.directory__field input {
+  padding: 0.85rem 1rem;
+  border-radius: 14px;
+  border: 1px solid var(--border-soft);
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+.directory__field input:focus {
+  border-color: var(--puzzle-blue);
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.18);
+  outline: none;
+}
+
+.directory__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.directory__empty {
+  text-align: center;
+  color: var(--text-muted);
+  font-weight: 600;
+}

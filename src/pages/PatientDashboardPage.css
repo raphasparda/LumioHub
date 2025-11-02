@@ -1,0 +1,199 @@
+﻿.patient-panel {
+  padding: 4.5rem 0 5.5rem;
+}
+
+.patient-panel__container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.75rem;
+}
+
+.patient-panel__header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.75rem;
+}
+
+.patient-panel__header p {
+  max-width: 580px;
+  margin: 0;
+  line-height: 1.65;
+}
+
+.patient-panel__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.patient-panel__section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.patient-panel__section-header h2 {
+  margin: 0;
+}
+
+.patient-panel__section-header p {
+  margin: 0;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+.patient-panel__access {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.patient-panel__access-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.patient-panel__empty {
+  margin: 0;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.patient-panel__history {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.patient-panel__history li {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.96);
+  border-radius: 16px;
+  padding: 1rem 1.25rem;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 12px 26px rgba(15, 23, 42, 0.12);
+}
+
+.patient-panel__history-test {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.patient-panel__history-date {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.patient-panel__tasks {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.patient-panel__task {
+  background-color: rgba(255, 255, 255, 0.96);
+  border-radius: 20px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.14);
+}
+
+.patient-panel__task p {
+  margin: 0.35rem 0 0;
+  color: var(--text-secondary);
+}
+
+.patient-panel__task footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.patient-panel__task-date {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.patient-panel__task-status {
+  padding: 0.25rem 0.9rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--text-primary);
+}
+
+.patient-panel__task-status--pending {
+  background-color: rgba(250, 204, 21, 0.18);
+}
+
+.patient-panel__task-status--inprogress {
+  background-color: rgba(37, 99, 235, 0.18);
+}
+
+.patient-panel__task-status--done {
+  background-color: rgba(34, 197, 94, 0.18);
+}
+
+.patient-panel__resources {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.patient-panel__resources li {
+  background-color: rgba(255, 255, 255, 0.96);
+  border-radius: 18px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.1);
+}
+
+.patient-panel__resources span {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.patient-panel__resources p {
+  margin: 0;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 640px) {
+  .patient-panel__header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .patient-panel__header .btn {
+    width: 100%;
+  }
+
+  .patient-panel__history li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .patient-panel__task footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

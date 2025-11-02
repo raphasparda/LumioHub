@@ -1,0 +1,56 @@
+.mchat-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  background: linear-gradient(135deg, rgba(250, 204, 21, 0.12), rgba(239, 68, 68, 0.12)), var(--surface-card);
+}
+
+.mchat-card__header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.mchat-card__badge {
+  align-self: flex-start;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  background-color: rgba(250, 204, 21, 0.2);
+  color: var(--puzzle-yellow);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.mchat-card__critical {
+  font-size: 0.85rem;
+  color: var(--puzzle-red);
+  font-weight: 600;
+  background-color: rgba(239, 68, 68, 0.12);
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  align-self: flex-start;
+}
+
+.mchat-card__options {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+}
+
+.mchat-card__option {
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--text-primary);
+  border: 1px solid transparent;
+  border-radius: 14px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.mchat-card__option:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 30px rgba(15, 23, 42, 0.12);
+}
+
+.mchat-card__option--selected {
+  border-color: var(--puzzle-red);
+  box-shadow: 0 18px 34px rgba(239, 68, 68, 0.28);
+}
