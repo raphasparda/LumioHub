@@ -1,10 +1,13 @@
 {
   "buildCommand": "npm run build",
-  "framework": "react-router",
   "outputDirectory": "build",
   "devCommand": "npm start",
   "installCommand": "npm install",
-  "env": {
-    "REACT_APP_API_URL": "@react_app_api_url"
-  }
+  "nodeVersion": "18.x",
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
 }
